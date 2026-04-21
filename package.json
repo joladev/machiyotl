@@ -1,0 +1,18 @@
+{
+  "name": "machiyotl",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "^1.3.12",
+    "@types/react": "^19.2.14"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "hono": "^4.12.14",
+    "react": "^19.2.5",
+    "takumi-js": "^1.0.15"
+  }
+}
