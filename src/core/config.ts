@@ -1,24 +1,24 @@
 import { z } from "zod";
 
 export const FontSchema = z.object({
-  family: z.string(),
-  url: z.string().url(),
-  weight: z.number().optional(),
+	family: z.string(),
+	url: z.string().url(),
+	weight: z.number().optional(),
 });
 
 export const ThemeSchema = z.object({
-  siteName: z.string(),
-  bg: z.string(),
-  fg: z.string(),
-  accent: z.string(),
-  logoUrl: z.string().url().optional(),
-  fonts: z.array(FontSchema).optional(),
-  bodyFont: z.string().optional(),
-  monoFont: z.string().optional(),
+	siteName: z.string(),
+	bg: z.string(),
+	fg: z.string(),
+	accent: z.string(),
+	logoUrl: z.string().url().optional(),
+	fonts: z.array(FontSchema).optional(),
+	bodyFont: z.string().optional(),
+	monoFont: z.string().optional(),
 });
 
 export const SiteSchema = z.object({
-  theme: ThemeSchema,
+	theme: ThemeSchema,
 });
 
 export const ConfigSchema = z.record(z.string(), SiteSchema);
