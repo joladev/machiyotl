@@ -13,6 +13,10 @@
   "dependencies": {
     "hono": "^4.12.14",
     "react": "^19.2.5",
-    "takumi-js": "^1.0.15"
+    "takumi-js": "^1.0.15",
+    "zod": "^4.3.6"
+  },
+  "scripts": {
+    "gen-sig": "bun run scripts/generate-signature.ts"
   }
 }
